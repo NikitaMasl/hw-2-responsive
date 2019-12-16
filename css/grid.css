@@ -1,0 +1,148 @@
+body{
+    overflow: hidden;
+    background: #203240;
+    background-image:radial-gradient(circle 100vh at top, #b3b8be, #203240);
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 125%;
+    color: #fff;
+    text-align: center;
+    
+}
+.pforday{
+font-size: 40px; 
+text-align: none; 
+margin-bottom: 0px;
+}
+.zeromargin{
+    margin: 0px;
+}
+.pbiggradus{
+font-size: 140px; 
+text-align: none; 
+margin-bottom: 0px;
+}
+.pplace{
+font-size: 28px; 
+text-align: none; 
+margin-left: -30px;
+margin-top: -10px;
+}
+.divtoday{
+    margin-top: -10px; 
+    margin-left: 20px;
+}
+.imgdivtoday{
+    margin-top: -20px; 
+    margin-left: -15px;
+    float: left; 
+}
+.pdivtoday{
+    font-size: 28px; 
+    text-align: none; 
+    margin: 0px; 
+    float: left;
+}
+.mainbar{
+    width: 600px;
+    height: 337.5px;
+    position: absolute;
+    margin-left: 700px;
+}
+.pdaysbottombar{
+padding-top: 65px;
+}
+.mainbarday{
+    position: relative;
+    float: left;
+    margin-top: 80px;
+}
+.mainbartemp{
+    position: relative;
+    float: left;
+    margin-top: -35px;
+    margin-left: 40px;
+}
+.boxForCity{
+    width: 1200px;
+    height: 675px;
+    background: url(../img/Paris_Eiffel_Towe.jpg);
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bottomBar{
+    width: 1200px;
+    height: 155px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.45);
+    top: 520px;
+}
+.bttomContainer{
+    display: inline-block;
+    padding-left: 120px;
+    width: 1100px;
+    height: 155px;
+}
+.containerForButton{
+    text-align: center;
+    display: block;
+    height: 155px;
+    width: 30px;
+    float: left;
+}
+#containerFordays{
+    float: left;
+    display:grid;
+    width: 900px;
+    height: 155px;
+    grid-template-columns:repeat(7, 225px);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.day{
+    position: relative;
+    min-width: 225px;
+    min-height: 155px;
+    padding-top: -30px;
+}
+.day1{
+    position: relative;
+    min-width: 225px;
+    min-height: 155px;
+    padding-top: -30px;
+}
+div.day::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: #fff;
+    width: 1px;
+    margin-top: 25px;
+    height: 110px;
+}
+.imgbutton{
+    padding-top: 60px;
+}
+.containerForButton:hover{
+    background: rgba(0, 0, 0, 0.75);
+}
+.weatherimg{
+    position: absolute;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+}
+.weatherimgt{
+    position: absolute;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    bottom: 30px;
+    width: 80px;
+    height: 60px;
+}
