@@ -50,11 +50,74 @@ margin-top: -10px;
     width: 600px;
     height: 337.5px;
     position: absolute;
-    margin-left: 700px;
+    margin-left: 50vw;
+}
+.cont{
+    display: flex;
+    flex-direction: row;
+    min-width: 225px;
+}
+@media all and (max-width: 550px){
+    .imgbutton{
+        display: none;
+    }
+    #containerFordays{
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        padding-left: 10vw;
+    }
+    .containerForButton{
+        display: none;
+    }
+    .bttomContainer{
+        padding-left: 0px;
+    }
+    .cont{
+        width: 55vw;
+        flex-wrap: wrap;
+        margin-left: 30vw;
+    }
+    .mainbar{
+        margin-left: 0px;
+    }
+    .pbiggradus{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .mainbartemp{
+        margin-top: 0px;
+        margin-left: -20px;
+    }
+}
+
+@media all and (min-width: 550px){
+    .containerForButton:hover{
+        background: rgba(0, 0, 0, 0.75);
+    }
+    div.day::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        background-color: #fff;
+        width: 1px;
+        margin-top: 25px;
+        height: 110px;
+    }
+    .bttomContainer{
+        padding-left: 10vw;
+    }
+    .containerForButton{
+        display: block;
+    }
+    .mainbartemp{
+        margin-top: -35px;
+        margin-left: 40px;
+    }
 }
 .pdaysbottombar{
-padding-top: 65px;
-}
+    padding-top: 65px;
+    }
 .mainbarday{
     position: relative;
     float: left;
@@ -63,8 +126,6 @@ padding-top: 65px;
 .mainbartemp{
     position: relative;
     float: left;
-    margin-top: -35px;
-    margin-left: 40px;
 }
 .boxForCity{
     width: 1200px;
@@ -83,13 +144,11 @@ padding-top: 65px;
 }
 .bttomContainer{
     display: inline-block;
-    padding-left: 120px;
     width: 1100px;
     height: 155px;
 }
 .containerForButton{
     text-align: center;
-    display: block;
     height: 155px;
     width: 30px;
     float: left;
@@ -97,11 +156,11 @@ padding-top: 65px;
 #containerFordays{
     float: left;
     display:flex;
-    width: 900px;
+    width: 58vw;
+    min-width: 225px;
     height: 155px;
     flex-direction: row;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 .day{
     position: relative;
@@ -115,20 +174,8 @@ padding-top: 65px;
     min-height: 155px;
     padding-top: -30px;
 }
-div.day::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    background-color: #fff;
-    width: 1px;
-    margin-top: 25px;
-    height: 110px;
-}
 .imgbutton{
     padding-top: 60px;
-}
-.containerForButton:hover{
-    background: rgba(0, 0, 0, 0.75);
 }
 .weatherimg{
     position: absolute;
